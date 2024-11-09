@@ -1,0 +1,51 @@
+/*
+selector {
+property1: value;
+}
+
+class selector
+.class-name{
+property1: value;
+
+display: flex; only one element exists in a row
+form input{} all the input that falls inside the forms, 100 % in from input will fill in the parent form width 300px
+padding means all around leaving some space
+
+margin will affect outside the element itself
+padding will affect inside the element itself
+With text it has an invisible square box so when use padding it will move accor to that
+*/
+form {
+    background-color: beige;
+    margin: auto;
+    width: 450px;
+    padding-left: 25px;
+}
+
+form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+form input {
+    width: 90%;
+    padding: 7px;
+    border: 1px solid gray;
+    border-radius: 6px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+input[type="submit"] {
+    width: 120px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #49c1a2;
+    color: white;
+    font-size: 18px;
+}

@@ -1,0 +1,80 @@
+<!--
+DOCTYPE = document type
+metadata setting and linkage for <Head>
+<Title> = Tab bar name
+<p> stands for paragraph
+<h> stands for heading, different h1, h2, h3, h4, h5 represent the word size
+<link rel> = relationship <link href> = hypertext reference
+class="main-text"
+<div> = division box for grouping multiple elements together
+no closing tags for <input>
+<for> must match with <id> so that it will place the cursor inside the box
+<a> = anchor to create a hyperlink, # stay at local page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Loan Calculator</title>
+        <link
+            rel="stylesheet"
+            href="style.css"
+        />
+    </head>
+    <body>
+        <div class="calc-box">
+            <h1>Loan Calculator</h1>
+
+            <form
+                id="myForm"
+                class="form-container"
+            >
+                <label for="loanAmount">Loan Amount ($):</label>
+                <input
+                    id="loanAmount"
+                    type="number"
+                />
+                <label for="interestRate">Interest Rate (%):</label>
+                <input
+                    id="interestRate"
+                    type="number"
+                />
+
+                <label for="payBack">Payback:</label>
+                <select id="payBack">
+                    <option value="everyMonth">Every Month</option>
+                </select>
+
+                <span>Loan Term:</span>
+
+                <label for="years">Years:</label>
+                <input
+                    id="years"
+                    type="number"
+                />
+
+                <label for="months">Months:</label>
+                <input
+                    id="months"
+                    type="number"
+                />
+                <input
+                    type="submit"
+                    value="Submit"
+                />
+                <label for="result">Result:</label>
+                <input
+                    id="result"
+                    type="text"
+                    readonly
+                />
+            </form>
+        </div>
+        <script src="loanCalculator.js"></script>
+    </body>
+</html>
